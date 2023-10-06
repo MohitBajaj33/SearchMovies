@@ -22,7 +22,7 @@ btn.addEventListener("click", () => {
       return response.json();
     })
     .then((data) => {
-        const n=data.d.length;
+        const n=data.d.length -1;
         setTimeout(()=>{
             for(let k=0;k<n;k++){
                 const createNewDiv = document.createElement('div');
