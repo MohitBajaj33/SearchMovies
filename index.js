@@ -22,7 +22,7 @@ btn.addEventListener("click", () => {
       return response.json();
     })
     .then((data) => {
-        const n=(data.d.length) -1;
+        const n=(data.d.length)-1;
         setTimeout(()=>{
             for(let k=0;k<n;k++){
                 const createNewDiv = document.createElement('div');
@@ -33,9 +33,10 @@ btn.addEventListener("click", () => {
                 console.log(n);
             }
         },2000);
-
+        const value = document.querySelector("input").value='';
       
     });
 
     
 });
+
